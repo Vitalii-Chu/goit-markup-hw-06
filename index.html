@@ -435,6 +435,30 @@
             </li>
           </ul>
         </div>
+        <div class="footer-submit">
+          <strong class="submit-text">Підпишіться на розсилку</strong>
+          <form>
+            <ul class="submit-list">
+              <li>
+                <label for="mail"></label>
+                <input
+                  class="input-footer"
+                  type="email"
+                  name="user_mail"
+                  placeholder="E-mail"
+                />
+              </li>
+              <li>
+                <button class="submit-button" type="submit">
+                  Підписатися
+                  <svg class="icon-submit" width="24" height="24">
+                    <use href="./images/icon.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -444,6 +468,44 @@
             <use href="./images/icon.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="contact-form">
+          <strong class="modal-text"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <label class="form-field">
+            <input class="form-input" type="text" name="user_name" required />
+            Ім'я
+          </label>
+          <label class="form-field">
+            <input class="form-input" type="tel" name="user_phone" required />
+            Телефон
+          </label>
+          <label class="form-field">
+            <input class="form-input" type="email" name="user_mail" required />
+            Пошта
+          </label>
+          <label class="form-field">
+            <textarea
+              class="form-message"
+              placeholder="Введіть текст"
+              name="user_message"
+            ></textarea>
+            Коментар
+          </label>
+          <div class="checkbox-wrapper">
+            <input
+              class="checkbox-form"
+              type="checkbox"
+              name="accept_policy"
+              required
+            />
+            <label class="checkbox-description" for=""
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></label
+            >
+          </div>
+          <button class="button-form" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
